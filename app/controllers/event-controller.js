@@ -16,7 +16,11 @@ var EventController = {
       });
   },
 
-  getEvents: function getEvents(req, res){},
+  getEvents: function getEvents(req, res){
+    var query = req.query;
+
+
+  },
 
   removeEvent: function removeEvent(req, res){}
 

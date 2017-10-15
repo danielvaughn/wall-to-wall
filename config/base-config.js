@@ -1,7 +1,7 @@
 
 const baseConfig = {
 
-  eventCategories: [
+  categories: [
     {
       id: 'entertainment',
       displayName: 'Entertainment',
@@ -19,8 +19,8 @@ const baseConfig = {
               displayName: 'Theater'
             },
             {
-              id: 'balet',
-              displayName: 'Balet'
+              id: 'ballet',
+              displayName: 'Ballet'
             },
             {
               id: 'comedy',
