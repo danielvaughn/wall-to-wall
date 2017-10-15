@@ -1,6 +1,6 @@
 
 var express = require('express'),
-    config = require('./config'),
+    config = require('./config').getConfig(),
     glob = require('glob'),
     mongoose = require('mongoose'),
     router = require('./app/router');
@@ -24,4 +24,4 @@ app.listen(config.port, function () {
   console.log('Express server listening on port ' + config.port);
 });
 
-module.exports = require('./config/express')(app, config);
+module.exports = app;
