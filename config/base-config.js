@@ -1,4 +1,7 @@
 
+const _ = require('lodash');
+
+
 const baseConfig = {
 
   categories: [
@@ -30,7 +33,13 @@ const baseConfig = {
         }
       ]
     }
-  ]
+  ],
+
+  flattenCategories: function(){
+    var categories = [];
+
+    
+  }
 
 };
 

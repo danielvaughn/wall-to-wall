@@ -1,22 +1,25 @@
 
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+    Schema = mongoose.Schema,
+    config = require('../../config').getConfig();
 
 
 var ToDoEventSchema = new Schema({
+  owneer: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
   id: String,
   name: String,
-  url: String,
   description: String,
+  url: String,
   time: {
     start: Date,
     end: Date
   },
   location: {
     id: String,
-    lat: String,
-    lng: String
-  }
+    lat: Number,
+    lng: Number
+  },
+  category: String
 });
 
 
